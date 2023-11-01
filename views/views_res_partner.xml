@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" type="object" name="get_clases"
+                    icon="fa-users">
+                    <field string="Clases" name="clases_count" widget="statinfo"/>
+                </button>
+            </div>
+        </field>
+     </record>
+  </data>
+</odoo>

@@ -17,9 +17,8 @@ class Clases(models.Model):
         return {
             'type': 'ir.actions.act_window',
             'name': 'Clases',
-            'view_mode': 'form,tree',
+            'view_mode': 'tree,form',
             'res_model': 'clases',
             'domain': [('partner_id', '=', self.id)],
             'context': "{'create': True}"
         }
-
